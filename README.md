@@ -28,9 +28,15 @@ If you want just bare minimum you have to print custom enclosure for external fe
 3) Print every other models in PLA.
 4) Those 2 elements might be lose, if so, apply some glue in socket
 <img width="709" height="461" alt="image" src="https://github.com/user-attachments/assets/942b7660-bf55-49f1-864d-5afe315b58b7" />
+
 5) Put 4 inserts according to image
 <img width="1101" height="491" alt="image" src="https://github.com/user-attachments/assets/09866b18-5ee6-4361-a7ef-26ac0b24adc3" />
-6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below.
+
+6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below. Mouting spool on the right sorten the length of PTFE tube.
+<img width="4080" height="1884" alt="image" src="https://github.com/user-attachments/assets/c680c8ee-d974-43c3-b17c-4f200b404bdb" />
+<img width="1194" height="895" alt="image" src="https://github.com/user-attachments/assets/128d7f71-f5b2-46d5-9856-e67ee444517b" />
+
+
  
 # Versions
 ## List
