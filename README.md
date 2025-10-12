@@ -11,10 +11,33 @@ Because original external feeder for Sovol SV08 MAX is (being direct) horrible I
 <img width="620" height="539" alt="image" src="https://github.com/user-attachments/assets/46c2c6be-7fda-4736-896b-82629bf09ebe" />
 <img width="579" height="502" alt="image" src="https://github.com/user-attachments/assets/aa882729-d9f8-4234-8a25-86bd82573f90" />
 
+## Tutorial
+If you want just bare minimum you have to print custom enclosure for external feeder in ABS!!! (other matierals would melt). Internal stepper motor gets realy hot and can overheat MCU.
 
-# List of versions
+### Hardware needed
+* 8x M5 nuts and bolts(40mm)
+* 4x threaded insert M3 5mm or 3mm
+* 2x M3 bolt 12mm(or longer)
+* 4x bearing 608 ZZ 8x22x7mm
+* wooden countertop 800mmx400mmx18mm
+* 1.5m of any cable capable of transfer power and signal to external feeder
 
+## Steps
+1) Before printing enclosure for external feeder use "BearingCheck.step" to test if model printed from your printer is a perfect fit, bearing must fit perfectly to ensure smooth filament passage. If not try to adjust offsets until bearings fit and apply them to the CustomFeederCase.step.
+2) Print external feeder enclosure in ABS!!!. Other materials would soften or worse even melt. Use supports for latches and overhangs.
+3) Print every other models in PLA.
+4) Those 2 elements might be lose, if so, apply some glue in socket
+<img width="709" height="461" alt="image" src="https://github.com/user-attachments/assets/942b7660-bf55-49f1-864d-5afe315b58b7" />
+5) Put 4 inserts according to image
+<img width="1101" height="491" alt="image" src="https://github.com/user-attachments/assets/09866b18-5ee6-4361-a7ef-26ac0b24adc3" />
+6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below.
+ 
+# Versions
+## List
 * V0.1
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
     * Initial versions of step filest for mod
+## Known issues
+* V0.1
+  * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
