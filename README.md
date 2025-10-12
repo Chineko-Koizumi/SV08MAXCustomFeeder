@@ -15,6 +15,6 @@ Because original external feeder for Sovol SV08 MAX is (being direct) horrible I
 # List of versions
 
 * V0.1
-    * Initial macro for autosyncronization
+    * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
-    * Initial versions of step filest for mo
+    * Initial versions of step filest for mod
