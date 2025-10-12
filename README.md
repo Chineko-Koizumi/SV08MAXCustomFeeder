@@ -35,7 +35,7 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 5) Put 4 inserts according to image <img width="1101" height="491" alt="image" src="https://github.com/user-attachments/assets/09866b18-5ee6-4361-a7ef-26ac0b24adc3" />
 
-6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below. Mouting spool on the right sorten the length of PTFE, than assembly and mount parts.<img width="4080" height="1884" alt="image" src="https://github.com/user-attachments/assets/c680c8ee-d974-43c3-b17c-4f200b404bdb" /><img width="1194" height="895" alt="image" src="https://github.com/user-attachments/assets/128d7f71-f5b2-46d5-9856-e67ee444517b" />
+6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below, mouting spool on the right shorten the length of PTFE tube. Assembly and mount parts.<img width="4080" height="1884" alt="image" src="https://github.com/user-attachments/assets/c680c8ee-d974-43c3-b17c-4f200b404bdb" /><img width="1194" height="895" alt="image" src="https://github.com/user-attachments/assets/128d7f71-f5b2-46d5-9856-e67ee444517b" />
 
 7) To hold spool on rollers you can use anything cylindrical strong enough (I used curtain rod xD), but be aware that shaft shift so aditional stoppers may be needed.
 
