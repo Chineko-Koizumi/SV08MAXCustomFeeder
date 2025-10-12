@@ -3,7 +3,7 @@ Because original external feeder for Sovol SV08 MAX is (being direct) horrible I
 
 # Quick look on setup
 ## IRL photos
-![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/13d1012b-2f81-4489-8f28-96c8f767a857)![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/26d28c7b-c198-4b0c-8c3b-a37188d71cfa)
+![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/13d1012b-2f81-4489-8f28-96c8f767a857)![559183310_4341665459399970_7819196083902323529_n](https://github.com/user-attachments/assets/96154bac-ef33-40ed-82b7-8d8d39306e26)
 
 ## Models
 
