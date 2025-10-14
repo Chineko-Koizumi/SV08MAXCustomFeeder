@@ -41,12 +41,15 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 #### Software
 
+1) Replace buffer_stepper.cfg
+2) Remove references to old buffer macros from macro.cfg, example how to do it is inside example_macro.cfg 
+
 # Versions
 ## List
 * V0.1
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
     * Initial versions of step filest for mod
-## Known issues
+### Known issues for V0.1
 * V0.1
   * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
