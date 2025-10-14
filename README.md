@@ -41,6 +41,10 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 1) Replace buffer_stepper.cfg
 2) Remove references to old buffer macros from macro.cfg, example how to do it is inside example_macro.cfg 
+3) There are 2 things inside buffer_stepper.cfg that may need adjustment:
+   * variable_default_rotation_distance: 9.75 (this is rotation_distance in mm for buffer stepper recalculations)
+   * variable_filament_length_ptfe: 1300.0 (this is length in mm between toolehad extruder and buffer)
+
 
 # Versions
 ## List
