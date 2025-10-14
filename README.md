@@ -1,5 +1,3 @@
-# WORK IN PROGRESS!!!!
-
 # Description
 Because original external feeder for Sovol SV08 MAX is (being direct) horrible I created this project to adress some issues. I treat this as self-development project so I not guaranteeing that it would work on your setup, but despite this I'm open to sugestions. For now everything is tested only on PLA setup.
 
