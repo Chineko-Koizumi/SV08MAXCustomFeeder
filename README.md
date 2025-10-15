@@ -2,6 +2,9 @@
 Because original external feeder for Sovol SV08 MAX is (being direct) horrible I created this project to adress some issues. I treat this as self-development project so I not guaranteeing that it would work on your setup, but despite this I'm open to sugestions. For now everything is tested only on PLA setup.
 
 # Quick look on setup
+
+I did create my own extender for SV08 MAX so I can use whole 500mm of Z axis but if you do not use extender you need to measure how much height you lose. Not adjusting max height on not extended top may damage your printer!!! 
+
 ## IRL photos
 ![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/13d1012b-2f81-4489-8f28-96c8f767a857)![559183310_4341665459399970_7819196083902323529_n](https://github.com/user-attachments/assets/96154bac-ef33-40ed-82b7-8d8d39306e26)
 
@@ -54,5 +57,6 @@ If you want just bare minimum you have to print custom enclosure for external fe
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
     * Initial versions of step files for mod
-### Known issues for V0.1
+      
+Known issues for V0.1:
 * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
