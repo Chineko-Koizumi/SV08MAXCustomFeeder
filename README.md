@@ -39,7 +39,7 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 #### Software
 
-1) Replace buffer_stepper.cfg
+1) Replace in mainsail webpage replace original contents of buffer_stepper.cfg with the provided ones.
 2) Remove references to old buffer macros from Macro.cfg, example how to do it is inside example_Macro.cfg
 3) There are 2 things inside buffer_stepper.cfg that may need adjustment:
    * variable_default_rotation_distance: 9.75 (this is rotation_distance in mm for buffer stepper recalculations)
@@ -48,13 +48,11 @@ If you want just bare minimum you have to print custom enclosure for external fe
 5) Add CENTER_EXTERNAL_FEEDER after INIT_CYCLIC_MACROS
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
 
-
 # Versions
 ## List
 * V0.1
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
-    * Initial versions of step filest for mod
+    * Initial versions of step files for mod
 ### Known issues for V0.1
-* V0.1
-  * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
+* If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
