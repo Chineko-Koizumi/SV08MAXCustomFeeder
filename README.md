@@ -52,7 +52,10 @@ If you want just bare minimum you have to print custom enclosure for external fe
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
 
 # Versions
-## List
+
+* V0.2
+    * New method for centering buffer, centering during print no longer needed
+
 * V0.1
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
