@@ -12,7 +12,7 @@ Because original external feeder for Sovol SV08 MAX is (being direct) horrible I
 <img width="579" height="502" alt="image" src="https://github.com/user-attachments/assets/aa882729-d9f8-4234-8a25-86bd82573f90" />
 
 ## Tutorial
-If you want just bare minimum you have to print custom enclosure for external feeder (in **ABS!!!**). (other matierals would melt). Internal stepper motor gets realy hot and can overheat MCU.
+If you want just bare minimum you have to print custom enclosure for external feeder (in **ABS!!!** other matierals would melt). Internal stepper motor gets realy hot and can overheat MCU.
 ### Hardware needed
 * 8x M5 nuts and bolts(40mm)
 * 4x threaded insert M3 5mm or 3mm
@@ -35,11 +35,11 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below, mouting spool on the right shorten the length of PTFE tube. Assembly and mount parts.<img width="4080" height="1884" alt="image" src="https://github.com/user-attachments/assets/c680c8ee-d974-43c3-b17c-4f200b404bdb" /><img width="1194" height="895" alt="image" src="https://github.com/user-attachments/assets/128d7f71-f5b2-46d5-9856-e67ee444517b" />
 
-7) To hold spool on rollers you can use anything cylindrical strong enough (I used curtain rod xD), but be aware that shaft shift so aditional stoppers may be needed.
+7) To hold spool on rollers you can use anything cylindrical strong enough (I used curtain rod xD), but be aware that shaft may shift so aditional stoppers may be needed.
 
 #### Software
 
-1) Replace buffer_stepper.cfg
+1) Replace in mainsail webpage replace original contents of buffer_stepper.cfg with the provided ones.
 2) Remove references to old buffer macros from Macro.cfg, example how to do it is inside example_Macro.cfg
 3) There are 2 things inside buffer_stepper.cfg that may need adjustment:
    * variable_default_rotation_distance: 9.75 (this is rotation_distance in mm for buffer stepper recalculations)
@@ -48,13 +48,11 @@ If you want just bare minimum you have to print custom enclosure for external fe
 5) Add CENTER_EXTERNAL_FEEDER after INIT_CYCLIC_MACROS
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
 
-
 # Versions
 ## List
 * V0.1
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
-    * Initial versions of step filest for mod
+    * Initial versions of step files for mod
 ### Known issues for V0.1
-* V0.1
-  * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
+* If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
