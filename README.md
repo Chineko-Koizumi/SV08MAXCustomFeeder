@@ -54,5 +54,6 @@ If you want just bare minimum you have to print custom enclosure for external fe
     * Initial macro for resynchronization
     * Initial macro for filament runout detectiom
     * Initial versions of step files for mod
-Known issues for V0.1
+      
+Known issues for V0.1:
 * If for some reason filament inside buffer slips right after buffer recalculation, it will lead to big change in rotation and possibly constant recalculation those will block printing progress until method SET_BUFFER_DEFAULT_ROTATION_DISTANCE is called.
