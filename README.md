@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=mHzhyefJMEk
 <img width="579" height="502" alt="image" src="https://github.com/user-attachments/assets/aa882729-d9f8-4234-8a25-86bd82573f90" />
 
 ## Tutorial
-If you want just bare minimum you have to print custom enclosure for external feeder (in **ABS!!!** other matierals would melt). Internal stepper motor gets realy hot and can overheat MCU.
+If you want just bare minimum you have to print custom enclosure for external feeder (in **ABS!!!** other materials would melt). Internal stepper motor gets realy hot and can overheat MCU.
 ### Hardware needed
 * 8x M5 nuts and bolts(40mm)
 * 4x threaded insert M3 5mm or 3mm
