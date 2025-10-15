@@ -45,11 +45,12 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 #### Software
 
-1) Replace in mainsail webpage replace original contents of buffer_stepper.cfg with the provided ones.
+1) In mainsail webpage replace original contents of buffer_stepper.cfg with the provided one.
 2) Remove references to old buffer macros from Macro.cfg, example how to do it is inside example_Macro.cfg
-3) There are 2 things inside buffer_stepper.cfg that may need adjustment:
+3) There are 3 things inside buffer_stepper.cfg that may need adjustment:
    * variable_default_rotation_distance: 9.75 (this is rotation_distance in mm for buffer stepper recalculations)
    * variable_filament_length_ptfe: 1300.0 (this is length in mm between toolehad extruder and buffer)
+   * filament sensor sensivity can be adjusted via editing this line {% if delta_length > 250.0 %} inside DELTA_EVALUATE
 4) Add INIT_CYCLIC_MACROS after CLEAR_PAUSE inside START_PRINT macro
 5) Add CENTER_EXTERNAL_FEEDER after INIT_CYCLIC_MACROS
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
