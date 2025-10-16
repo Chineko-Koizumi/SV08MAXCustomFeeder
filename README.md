@@ -50,7 +50,7 @@ If you want just bare minimum you have to print custom enclosure for external fe
 3) There are 3 things inside buffer_stepper.cfg that may need adjustment:
    * variable_default_rotation_distance: 9.75 (this is rotation_distance in mm for buffer stepper recalculations)
    * variable_filament_length_ptfe: 1300.0 (this is length in mm between toolehad extruder and buffer)
-   * filament sensor sensivity can be adjusted via editing this line {% if delta_length > 250.0 %} inside DELTA_EVALUATE, less value means more frequequent more significant changes in rotation_distance, I advide using between 150 and 250 for PLA.
+   * filament sensor sensivity can be adjusted via editing this line {% if delta_length > 250.0 %} inside DELTA_EVALUATE, less value means more frequequent more significant changes in rotation_distance, I advise using between 150 and 250 for PLA.
 4) Add INIT_CYCLIC_MACROS after CLEAR_PAUSE inside START_PRINT macro
 5) Add CENTER_EXTERNAL_FEEDER after INIT_CYCLIC_MACROS
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
