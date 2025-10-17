@@ -57,6 +57,8 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 # Versions
 
+* V0.3
+    * Bug fix for frequent buffor rotation changes
 * V0.2
     * New method for centering buffer, centering during print no longer needed
 
@@ -66,6 +68,8 @@ If you want just bare minimum you have to print custom enclosure for external fe
     * Initial versions of step files for mod
       
 Known issues
+* V0.3
+    * None
 * V0.2
     * High flow rates triggers frequent buffor rotation changes
 * V0.1
