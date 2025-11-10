@@ -54,8 +54,29 @@ If you want just bare minimum you have to print custom enclosure for external fe
 5) Add CENTER_EXTERNAL_FEEDER after INIT_CYCLIC_MACROS
 6) Add RESET_VARIABLES_BUFFER_STEPPER at the end of END_PRINT and CANCEL_PRINT macros
 
+There is two modes in which filament buffer can operate:
+
+- Passive: only filament runout sensor, PTFE tube between buffer and toolhead not needed. **Spring pushing filament in buffer have to be removed to allow smooth passage**.
+- Active: buffer (in mirror mode to toolhead) assist in filament feeding, PTFE tube between buffer and toolhead necessary.
+
+Only one of them can be enabled at the same time, you have two comment out other one:
+Sections in buffer_stepper.cfg: 
+
+<pre>######################################################################
+###### Active Filament Buffer                      
+######################################################################</pre>
+
+<pre>######################################################################
+###### Passive Filament Buffer (filament sensor only)                         
+######################################################################</pre>
+
+Passive mode is turned on by default.
+
 # Versions
 
+* V0.4
+    * New working mode: "Passive"
+    * Rotation calculation adjustment
 * V0.3
     * Bug fix for frequent buffor rotation changes
 * V0.2
