@@ -56,7 +56,7 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 There is two modes in which filament buffer can operate:
 
-- Passive: only filament runout sensor, PTFE tube between buffer and toolhead not needed. **Spring pushing filament in buffer have to be removed to allow smooth passage**.
+- Passive: only filament runout sensor, PTFE tube between buffer and toolhead not needed. **Spring pushing filament in buffer have to be removed to allow smooth passage!**
 - Active: buffer (in mirror mode to toolhead) assist in filament feeding, PTFE tube between buffer and toolhead necessary.
 
 Only one of them can be enabled at the same time, you have two comment out other one:
