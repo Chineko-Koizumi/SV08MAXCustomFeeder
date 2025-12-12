@@ -71,8 +71,6 @@ Sections in buffer_stepper.cfg:
 ###### Passive Filament Buffer (filament sensor only)                         
 ######################################################################</pre>
 
-Passive mode is turned on by default.
-
 # Versions
 
 * V0.5
