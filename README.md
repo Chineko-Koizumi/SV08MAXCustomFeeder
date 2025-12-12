@@ -9,7 +9,8 @@ I did create my own extender for SV08 MAX so I can use whole 500mm of Z axis but
 https://www.youtube.com/watch?v=mHzhyefJMEk
 
 ## IRL photos
-![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/13d1012b-2f81-4489-8f28-96c8f767a857)![559183310_4341665459399970_7819196083902323529_n](https://github.com/user-attachments/assets/96154bac-ef33-40ed-82b7-8d8d39306e26)
+![559814326_4341665236066659_7573989402878520107_n](https://github.com/user-attachments/assets/13d1012b-2f81-4489-8f28-96c8f767a857)![559183310_4341665459399970_7819196083902323529_n](https://github.com/user-attachments/assets/96154bac-ef33-40ed-82b7-8d8d39306e26) <img width="698" height="918" alt="max-custom-feeder" src="https://github.com/user-attachments/assets/3a43370f-36a5-4d51-8583-8e4a9281810d" />
+
 
 ## Models
 
@@ -21,8 +22,8 @@ https://www.youtube.com/watch?v=mHzhyefJMEk
 If you want just bare minimum you have to print custom enclosure for external feeder (in **ABS!!!** other materials would melt). Internal stepper motor gets realy hot and can overheat MCU.
 ### Hardware needed
 * 8x M5 nuts and bolts(40mm)
-* 4x threaded insert M3 5mm or 3mm
-* 2x M3 bolt 12mm(or longer)
+* 5x threaded insert M3 5mm or 3mm
+* 3x M3 bolt 12mm(or longer)
 * 4x bearing 608 ZZ 8x22x7mm
 * wooden countertop 800mmx400mmx18mm
 * 1.5m of any cable capable of transfer power and signal to external feeder
@@ -31,13 +32,13 @@ If you want just bare minimum you have to print custom enclosure for external fe
 #### Hardware
 1) Before printing enclosure for external feeder use "BearingCheck.step" to test if model printed from your printer is a perfect fit, bearing must fit perfectly to ensure smooth filament passage. If not try to adjust offsets until bearings fit and apply them to the CustomFeederCase.step.
 
-2) Print external feeder enclosure in **ABS!!!**. Other materials would soften or worse even melt. Use supports for latches and overhangs.
+2) Print external feeder enclosure and handle in **ABS!!!**. Other materials would soften or worse even melt. Use supports for latches and overhangs.
 
 3) Print every other part in PLA.
 
 4) Those 2 elements might be lose, if so, apply some glue in socket <img width="709" height="461" alt="image" src="https://github.com/user-attachments/assets/942b7660-bf55-49f1-864d-5afe315b58b7" />
 
-5) Put 4 inserts according to image <img width="1101" height="491" alt="image" src="https://github.com/user-attachments/assets/09866b18-5ee6-4361-a7ef-26ac0b24adc3" />
+5) Put 5 inserts according to images <img width="1101" height="491" alt="image" src="https://github.com/user-attachments/assets/09866b18-5ee6-4361-a7ef-26ac0b24adc3" /><img width="585" height="730" alt="image" src="https://github.com/user-attachments/assets/c4baa0f3-abc6-49eb-a0c4-a32fdb3b38ff" />
 
 6) Drill contertop to allow mount of FeederMount.step, TopSpoolMount.step and TopDeckGlassMount.step, the suggested arangment is on photo below, mouting spool on the right shorten the length of PTFE tube. Assembly and mount parts.<img width="4080" height="1884" alt="image" src="https://github.com/user-attachments/assets/c680c8ee-d974-43c3-b17c-4f200b404bdb" /><img width="1194" height="895" alt="image" src="https://github.com/user-attachments/assets/128d7f71-f5b2-46d5-9856-e67ee444517b" />
 
@@ -56,7 +57,7 @@ If you want just bare minimum you have to print custom enclosure for external fe
 
 There is two modes in which filament buffer can operate:
 
-- Passive: only filament runout sensor, PTFE tube between buffer and toolhead not needed. **Spring pushing filament in buffer have to be removed to allow smooth passage!**
+- Passive: only filament runout sensor, I highly advise keep PTFE tube between buffer and toolhead but is not needed. **Spring/screw from handle pushing filament in buffer have to be removed to allow smooth passage!**
 - Active: buffer (in mirror mode to toolhead) assist in filament feeding, PTFE tube between buffer and toolhead necessary.
 
 Only one of them can be enabled at the same time, you have two comment out other one:
@@ -74,6 +75,9 @@ Passive mode is turned on by default.
 
 # Versions
 
+* V0.5
+    * Better algorithm to find optimal rotation
+    * Added step file handle with screw for better friction on filament
 * V0.4
     * New working mode: "Passive"
     * Rotation calculation adjustment
@@ -88,8 +92,7 @@ Passive mode is turned on by default.
     * Initial versions of step files for mod
       
 Known issues
-* V0.3
-    * None
+
 * V0.2
     * High flow rates triggers frequent buffor rotation changes
 * V0.1
